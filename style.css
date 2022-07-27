@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar-expand-lg {
+    box-shadow: rgba(7, 70, 7, 0.747) 0px 2px 4px, rgba(56, 163, 74, 0.521) 0px 7px 13px -3px, rgba(10, 78, 7, 0.74) 0px -3px 0px inset;
+    background-color: rgba(21, 75, 10, 0.795);
+}
+
+.nav-links li a {
+    text-transform: uppercase;
+    color: white;
+    margin: 0px 13px 0px 13px;
+    font-size: larger;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    transition: all ease 2s;
+
+
+}
+
+.nav-links li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background-color: rgba(130, 226, 111, 0.795);
+    width: 0;
+    transition: 0.5s;
+
+
+}
+
+.nav-links li a:hover::before {
+    width: 50px;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgba(130, 226, 111, 0.795);
+    width: 0;
+    transition: 0.5s;
+
+
+}
+
+.nav-links li a:hover::after {
+    width: 50px;
+
+}
+
+
+.icons i{
+    color: white;
+    margin:0px 10px;
+    padding:10px ;
+    transition: 0.8s;
+   
+
+}
+
+.icons i:hover{
+    color: rgba(130, 226, 111, 0.795);
+}
+
+
+.hero{
+    background-image: url(img/5ec60-05a0c-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.banner-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+}
+
+.banner-1 img{
+    margin-top: 200px;
+    animation: rotateimg 10s linear infinite;
+   
+}
+
+@keyframes rotateimg{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+
+.banner-2{
+    position: absolute;
+}
+
+.text{
+    text-align: center;
+    width:100%;
+   
+}
+
+.text h2{
+    z-index: 5;
+    white-space: nowrap;
+    font-size: 94px;
+    line-height: 99px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    letter-spacing: 4px;
+    font-family: Raleway;
+    opacity: 1;
+    margin-top: 100px;
+}
+
+.text h3{
+    z-index: 6;
+    white-space: nowrap;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    letter-spacing: 2px;
+    opacity: 1;
+
+   
+}
+
+
+
+
+.cols-1{
+
+}
+
